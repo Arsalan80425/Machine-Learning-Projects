@@ -35,10 +35,10 @@ CatBoost Classifier	78.6
 Stacking Ensemble	79.3
 
 📈 Visualizations
-Graph	Insights
-Confusion Matrix	Shows True Positives, False Positives/Negatives.
-ROC Curve	Evaluates model’s ability to differentiate classes.
-Precision-Recall Curve	Useful for imbalanced churn classification.
+Graph Insights
+Confusion Matrix Shows True Positives, False Positives/Negatives.
+ROC Curve Evaluates model’s ability to differentiate classes.
+Precision-Recall Curve Useful for imbalanced churn classification.
 Feature Importance Plot (Random Forest)	Highlights which features most influence churn.
 
 🚀 Run the Project Locally
@@ -54,31 +54,11 @@ Matplotlib, Seaborn
 
 Streamlit (for the web app)
 
-Steps:
 
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/customer-churn-prediction.git
-cd customer-churn-prediction
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
 Run the Jupyter Notebook for model training and visualizations.
 
-To run the Streamlit app:
+To run the Streamlit app: run in terminal "streamlit run app.py"
 
-bash
-Copy
-Edit
-streamlit run app.py
-🌐 Live Demo (Optional)
-[Provide your Streamlit Cloud App Link here if deployed]
 
 🚧 Future Improvements
 Add more business-relevant features (like Customer Support Calls, Service Upgrades).
@@ -88,4 +68,4 @@ Deploy the model as an API endpoint for real-time predictions.
 Enable dynamic feature input and display churn probability scores.
 
 📬 Contact
-For queries or collaboration, reach out at: [your.email@example.com]
+For queries or collaboration, reach out at: arsalanshaikh0408@gmail.com
