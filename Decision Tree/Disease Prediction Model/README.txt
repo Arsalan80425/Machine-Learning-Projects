@@ -1,23 +1,94 @@
-# Disease Prediction Using Machine Learning
+Disease Prediction Based on Symptoms
+This project is a web application that predicts potential diseases based on the symptoms a user provides. It leverages several machine learning models to provide the prediction. The front end is built with Streamlit, making it easy to interact with the models.
 
-## Project Description
+📋 Features
+Interactive Web Interface: A user-friendly interface built with Streamlit.
 
-This project focuses on developing a machine learning model to predict diseases based on a set of symptoms provided by the user. Using various algorithms, the system classifies diseases into one of the 41 categories based on 132 different symptoms. The main goal is to provide a simple yet effective tool for healthcare diagnostics using state-of-the-art machine learning techniques. The models used in this project include **Decision Tree**, **Random Forest**, **XGBClassifier**, **K-Nearest Neighbors (KNN)**, and **Multi-Layer Perceptron (MLP)**.
+Multiple Model Selection: Allows users to choose from five different trained machine learning models for prediction:
 
-The project utilizes a dataset, `Augmented_Data.csv`, which contains 132 symptom columns and a target column, "Prognosis", with 41 unique diseases. The final web application, built using **Streamlit**, allows users to input symptoms and receive a predicted diagnosis. 
+Decision Tree
 
-## Features
+Random Forest
 
-- **Symptom Input**: Users can input symptoms to predict possible diseases.
-- **Disease Prediction**: Based on the input symptoms, the model predicts the most likely disease.
-- **Algorithms Used**: Implements Decision Tree, Random Forest, XGBClassifier, KNN, and MLP for disease classification.
-- **Model Evaluation**: Performance metrics like accuracy, precision, recall, and F1-score are used to evaluate model performance.
+XGBoost
 
-## Setup Instructions
+K-Nearest Neighbors (KNN)
 
-### Prerequisites
+MLP Neural Network
 
-Before setting up the project, ensure that you have the following installed:
+Symptom-Based Prediction: Users can select multiple symptoms from a comprehensive list to get a disease prediction.
 
-- Python 3.x
-- pip (Python package installer)
+Dynamic Input: Creates a feature vector based on user selections to feed into the chosen model.
+
+⚙️ How It Works
+Select a Model: The user first chooses one of the available machine learning models from a dropdown menu.
+
+Select Symptoms: The user then selects two or more symptoms they are experiencing from a multi-select box.
+
+Predict: Upon clicking the "Predict Disease" button, the application converts the selected symptoms into a binary vector.
+
+Get Result: This vector is passed to the chosen model, which then outputs the predicted disease.
+
+🚀 Getting Started
+Follow these instructions to set up and run the project on your local machine.
+
+Prerequisites
+Make sure you have Python 3.8 or higher installed on your system.
+
+1. Clone the Repository
+Clone this repository to your local machine:
+
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
+
+2. Create a Virtual Environment (Recommended)
+It's a good practice to create a virtual environment to manage project dependencies.
+
+# For Windows
+python -m venv venv
+venv\Scripts\activate
+
+# For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+3. Install Dependencies
+Install the required Python libraries using the requirements.txt file.
+
+pip install -r requirements.txt
+
+If you don't have a requirements.txt file, create one and add the following content:
+
+streamlit
+pandas
+numpy
+scikit-learn
+xgboost
+
+4. Place Data and Model Files
+Make sure you have the necessary files in your project's root directory:
+
+Augmented_Data.csv (The dataset used for training)
+
+DecisionTree.joblib
+
+RandomForest.joblib
+
+XGBoost.joblib
+
+KNN.joblib
+
+MLP.joblib
+
+5. Run the Application
+Once the setup is complete, you can run the Streamlit application with the following command:
+
+streamlit run main.py
+
+This will start the application, and you can access it in your web browser at the local URL provided in the terminal (usually http://localhost:8501).
+
+🤝 Contributing
+Contributions are welcome! If you have suggestions for improvements, please feel free to fork the repository and submit a pull request.
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
